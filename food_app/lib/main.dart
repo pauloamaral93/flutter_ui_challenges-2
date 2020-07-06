@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/constants.dart';
+
+import 'package:food_app/src/screens/home_page.dart';
  
 void main() => runApp(MyApp());
  
@@ -6,17 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Food App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-        ),
-        body: Center(
-          child: Container(
-            child: Text('Hello World'),
-          ),
-        ),
+      theme: ThemeData(
+        scaffoldBackgroundColor: kBackgroundColor
       ),
+      home: HomePage(),
     );
   }
 }
+
