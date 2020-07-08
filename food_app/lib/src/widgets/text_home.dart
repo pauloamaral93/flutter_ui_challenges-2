@@ -11,7 +11,7 @@ class TextHome extends StatelessWidget {
     return Container(
       alignment: Alignment.center,
       width: double.infinity,
-      height: size.height * 0.25,
+      height: size.height * 0.20,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
