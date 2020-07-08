@@ -15,6 +15,8 @@ class HomePage extends StatelessWidget {
           CustomAppBar(),
           TextHome(),
           GridBurgers(),
+          CustomButton('assets/icons/IconArrowDown.svg'),
+          SocialAndLanguajes()
         ],
       ),
     );

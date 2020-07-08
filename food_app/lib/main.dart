@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/constants.dart';
+import 'package:food_app/src/screens/description_page.dart';
 
 import 'package:food_app/src/screens/home_page.dart';
  
@@ -15,6 +16,10 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: kBackgroundColor
       ),
       home: HomePage(),
+      routes: {
+        'home'        : (BuildContext context) => HomePage(),
+        'description' : (BuildContext context) => DescriptionPage()
+      },
     );
   }
 }
